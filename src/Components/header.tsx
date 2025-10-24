@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Menu, X, Home, Heart, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
-import logoOnestic from '../assets/pokedexonestic.png';
+import logoPokedex2 from '../assets/pokedexlogo.png';
 
 /**
  * Cabecera principal de la app: logo, navegación y switch de tema.
@@ -30,7 +30,7 @@ const Header = () => {
           >
             <img src={logoPokedex} alt="Logo" className="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
             <div className="h-fit font-bold text-white flex items-center gap-2 justify-center">
-              <img src={logoOnestic} alt="Logo" className="inline sm:h-9 h-6" />
+              <img src={logoPokedex2} alt="Logo" className="inline sm:h-9 h-6" />
             </div>
           </div>
 
