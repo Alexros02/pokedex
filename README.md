@@ -1,4 +1,4 @@
-### Pokédex Onestic (React + TypeScript + Vite)
+### Pokédex (React + TypeScript + Vite)
 
 Aplicación web que muestra el Pokédex de la región de Sinnoh (edición extendida/Platinum) utilizando la PokéAPI. Permite:
 
