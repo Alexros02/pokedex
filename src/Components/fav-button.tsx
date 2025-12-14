@@ -19,6 +19,10 @@ const FavButton = ({ pokemonId }: FavButtonProps) => {
     toggleFavorite(pokemonId);
   };
 
+  // Textos usando entidades HTML para compatibilidad con navegadores como Zen
+  const removeText = 'Eliminar';
+  const addText = 'A\u00F1adir'; // 'Añadir' usando Unicode
+
   return (
     <button
       type="button"
@@ -41,8 +45,8 @@ const FavButton = ({ pokemonId }: FavButtonProps) => {
           isFavorite(pokemonId) ? 'fill-current' : ''
         }`}
       />
-      <span className="absolute left-0 top-0 h-full w-full flex items-center justify-center text-xs font-medium text-gray-800 dark:text-gray-200 opacity-0 group-hover/fav:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-        {isFavorite(pokemonId) ? 'Eliminar' : 'Añadir'}
+      <span className="absolute left-0 top-0 h-full w-full flex items-center justify-center text-xs font-medium text-gray-800 dark:text-gray-200 opacity-0 group-hover/fav:opacity-100 transition-opacity duration-300 whitespace-nowrap font-sans">
+        {isFavorite(pokemonId) ? removeText : addText}
       </span>
     </button>
   );
